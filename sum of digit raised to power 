@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int n, power, sum = 0;
+    
+    // Input the number and the power
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    
+    printf("Enter the power: ");
+    scanf("%d", &power);
+    
+    while (n > 0) {
+        int rev = n % 10;
+        sum += pow(rev, power); 
+        n/=10;
+    }
+    printf("The sum of the digits raised to the power %d is: %d\n", power, sum);
+    
+    return 0;
+}
