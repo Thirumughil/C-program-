@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    int due,fine=0;
+    printf("Enter the number of days the book is taken:");
+    scanf("%d",&due);
+    if(due>7){
+        fine=(due - 7)*5;
+         printf("\nThe fine for the person for not submitting the book after due date over = Rs.%d",fine);
+    }else{
+        printf("No fine");
+    }
+   return 0;
+}
