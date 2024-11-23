@@ -1,0 +1,43 @@
+#include<stdio.h>
+int main(){
+    char c;
+    printf("Enter a character to check vowel:");
+    scanf("%c",&c);
+    if((c>='a'&&c<='z')||(c>='A'&&c<='Z')){
+        switch(c){
+            case 'a':
+            case 'A':
+            printf("\n%c is a vowel",c);
+            break;
+            
+            case 'e':
+            case 'E':
+            printf("\n%c is a vowel",c);
+            break;
+            
+            case 'i':
+            case 'I':
+            printf("\n%c is a vowel",c);
+            break;
+            
+            case 'o':
+            case 'O':
+            printf("\n%c is a vowel",c);
+            break;
+            
+            case 'u':
+            case 'U':
+            printf("\n%c is a vowel",c);
+            break;
+            
+            default:
+            printf("\n%c is a consonent",c);
+            break;
+        }
+    }
+        else{
+            printf("\nEnter a character not anything else");
+        }
+        return 0;
+    
+}
