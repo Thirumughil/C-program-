@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int ip(int num) {
+    if(num<=1) {
+        return 0;
+    }
+    for (int i=2;i*i<=num;i++) {
+        if(num%i==0) {
+            return 0;
+        }
+    }
+    return 1;  
+}
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+    
+    int sum = 0;
+    int fp= 0; 
+    for (int i = a; i <= b; i++) {
+        if (ip(i)) {
+            sum+=i;
+            fp=1;
+        }
+    }
+    if (fp) {
+        printf("%d\n", sum);
+    } else {
+        printf("No prime numbers in the given range\n");
+    }
+    return 0;
+}
