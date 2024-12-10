@@ -3,7 +3,7 @@ int main() {
     char str[100], rc;
     int i = 0;
     printf("Enter a string: ");
-    while ((str[i]=getchar())!= '\n' && i<99){ 
+    while ((str[i]=getchar())!='\n'&&i<99){ 
         i++;
     }
     str[i]='\0';
